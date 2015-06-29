@@ -10,9 +10,10 @@
 		49577B0A1B3ACB7100D10059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49577B091B3ACB7100D10059 /* AppDelegate.swift */; };
 		49577B0C1B3ACB7100D10059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49577B0B1B3ACB7100D10059 /* ViewController.swift */; };
 		49577B0F1B3ACB7100D10059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49577B0D1B3ACB7100D10059 /* Main.storyboard */; };
-		49577B111B3ACB7100D10059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49577B101B3ACB7100D10059 /* Assets.xcassets */; };
 		49577B141B3ACB7100D10059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49577B121B3ACB7100D10059 /* LaunchScreen.storyboard */; };
 		49577B1F1B3ACB7100D10059 /* ChineseFoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49577B1E1B3ACB7100D10059 /* ChineseFoodTrackerTests.swift */; };
+		49FB90831B416A4F00125811 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB90821B416A4F00125811 /* RatingControl.swift */; };
+		49FB90871B41914200125811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FB90861B41914200125811 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,13 @@
 		49577B091B3ACB7100D10059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49577B0B1B3ACB7100D10059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49577B0E1B3ACB7100D10059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		49577B101B3ACB7100D10059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49577B131B3ACB7100D10059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49577B151B3ACB7100D10059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49577B1A1B3ACB7100D10059 /* ChineseFoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseFoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49577B1E1B3ACB7100D10059 /* ChineseFoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseFoodTrackerTests.swift; sourceTree = "<group>"; };
 		49577B201B3ACB7100D10059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FB90821B416A4F00125811 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		49FB90861B41914200125811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ChineseFoodTracker/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		49577AFD1B3ACB7100D10059 = {
 			isa = PBXGroup;
 			children = (
+				49FB90861B41914200125811 /* Assets.xcassets */,
 				49577B081B3ACB7100D10059 /* ChineseFoodTracker */,
 				49577B1D1B3ACB7100D10059 /* ChineseFoodTrackerTests */,
 				49577B071B3ACB7100D10059 /* Products */,
@@ -79,8 +82,8 @@
 			children = (
 				49577B091B3ACB7100D10059 /* AppDelegate.swift */,
 				49577B0B1B3ACB7100D10059 /* ViewController.swift */,
+				49FB90821B416A4F00125811 /* RatingControl.swift */,
 				49577B0D1B3ACB7100D10059 /* Main.storyboard */,
-				49577B101B3ACB7100D10059 /* Assets.xcassets */,
 				49577B121B3ACB7100D10059 /* LaunchScreen.storyboard */,
 				49577B151B3ACB7100D10059 /* Info.plist */,
 			);
@@ -177,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49577B141B3ACB7100D10059 /* LaunchScreen.storyboard in Resources */,
-				49577B111B3ACB7100D10059 /* Assets.xcassets in Resources */,
+				49FB90871B41914200125811 /* Assets.xcassets in Resources */,
 				49577B0F1B3ACB7100D10059 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49577B0C1B3ACB7100D10059 /* ViewController.swift in Sources */,
+				49FB90831B416A4F00125811 /* RatingControl.swift in Sources */,
 				49577B0A1B3ACB7100D10059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +329,6 @@
 		49577B241B3ACB7100D10059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChineseFoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.jinshuju.ChineseFoodTracker;
@@ -336,7 +339,6 @@
 		49577B251B3ACB7100D10059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChineseFoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.jinshuju.ChineseFoodTracker;
@@ -387,6 +389,7 @@
 				49577B251B3ACB7100D10059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49577B261B3ACB7100D10059 /* Build configuration list for PBXNativeTarget "ChineseFoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +398,7 @@
 				49577B281B3ACB7100D10059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
