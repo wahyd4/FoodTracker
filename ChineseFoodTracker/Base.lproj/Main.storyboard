@@ -69,6 +69,7 @@
                     <connections>
                         <outlet property="mealImageView" destination="Pt9-Ju-te5" id="Rxe-Hv-zKG"/>
                         <outlet property="mealNameLabel" destination="DfK-XR-2Bh" id="3TN-Ja-OeS"/>
+                        <outlet property="ratingControl" destination="1GA-Gh-WUE" id="tTJ-jn-P2s"/>
                         <outlet property="textField" destination="FAQ-pu-Z9M" id="V3q-pD-Auq"/>
                     </connections>
                 </viewController>
