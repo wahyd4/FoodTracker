@@ -18,9 +18,16 @@ class RatingControl: UIView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        let emptyStar = UIImage(named: "emptyStar")
+        let filledStar = UIImage(named: "star")
+        
         for _ in  1...5 {
             let button = UIButton()
-            button.backgroundColor = UIColor.redColor()
+            button.setImage(emptyStar, forState: .Normal)
+            button.setImage(filledStar, forState: .Selected)
+            button.setImage(filledStar, forState: [.Selected, .Highlighted])
+            
+            button.adjustsImageWhenHighlighted = false
             button.addTarget(self, action: "ratingButtonTapped:", forControlEvents: .TouchDown)
             ratingButtons += [button]
             addSubview(button)
@@ -37,12 +44,19 @@ class RatingControl: UIView {
             buttonFrame.origin.x = CGFloat(index * (buttonSize + 5))
             button.frame = buttonFrame
         }
-        
+        updateButtonSelectionStates()
     }
     
     //MARK: button action
     func ratingButtonTapped(button: UIButton){
-        print("button pressed 🎃😀")
-        
+        rating = ratingButtons.indexOf(button)! + 1
+        updateButtonSelectionStates()
     }
+    
+    func updateButtonSelectionStates(){
+        for(index, button) in ratingButtons.enumerate() {
+            button.selected = index < rating
+        }
+    }
+    
 }
