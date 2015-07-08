@@ -12,6 +12,7 @@ class RatingControl: UIView {
     
     //MARK: properties
     var rating = 0
+
     var ratingButtons = [UIButton]()
     var spacing = 5
     var totalStars = 5
@@ -56,6 +57,7 @@ class RatingControl: UIView {
     }
     
     func updateButtonSelectionStates(){
+        print("==========\(rating)")
         for(index, button) in ratingButtons.enumerate() {
             button.selected = index < rating
         }
