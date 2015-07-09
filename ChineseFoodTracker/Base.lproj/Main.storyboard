@@ -121,7 +121,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="新增菜品" id="lfO-5I-67R">
-                        <barButtonItem key="leftBarButtonItem" title="取消" id="Loe-Jv-X43"/>
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="Loe-Jv-X43">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="Rbg-e1-uD0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="保存" id="UN7-VX-7Wg">
                             <connections>
                                 <segue destination="6uD-4X-KAu" kind="unwind" unwindAction="unwindToMealList:" id="n5i-e7-dYU"/>
