@@ -73,8 +73,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-pK-cL5">
-                                <rect key="frame" x="8" y="72" width="560" height="398"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-pK-cL5">
+                                <rect key="frame" x="20" y="72" width="560" height="398"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择你喜欢的食物" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfK-XR-2Bh">
                                         <rect key="frame" x="203.5" y="0.0" width="153" height="20.5"/>
@@ -116,7 +116,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Dgy-pK-cL5" secondAttribute="trailing" id="AzK-6U-UTm"/>
-                            <constraint firstItem="Dgy-pK-cL5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="nZS-QG-LZ7"/>
+                            <constraint firstItem="Dgy-pK-cL5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nZS-QG-LZ7"/>
                             <constraint firstItem="Dgy-pK-cL5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qXJ-2F-mYz"/>
                         </constraints>
                     </view>
