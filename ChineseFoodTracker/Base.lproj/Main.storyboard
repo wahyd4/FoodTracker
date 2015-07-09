@@ -122,15 +122,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="新增菜品" id="lfO-5I-67R">
                         <barButtonItem key="leftBarButtonItem" title="取消" id="Loe-Jv-X43"/>
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="UN7-VX-7Wg"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="UN7-VX-7Wg">
+                            <connections>
+                                <segue destination="6uD-4X-KAu" kind="unwind" unwindAction="unwindToMealList:" id="n5i-e7-dYU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mealImageView" destination="Pt9-Ju-te5" id="Rxe-Hv-zKG"/>
                         <outlet property="ratingControl" destination="1GA-Gh-WUE" id="tTJ-jn-P2s"/>
+                        <outlet property="saveButton" destination="UN7-VX-7Wg" id="wyQ-fe-jfI"/>
                         <outlet property="textField" destination="FAQ-pu-Z9M" id="V3q-pD-Auq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="6uD-4X-KAu" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="fla-0Y-HT1">
                     <pressTypeMask key="allowedPressTypes"/>
                     <connections>
