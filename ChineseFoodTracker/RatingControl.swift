@@ -57,7 +57,6 @@ class RatingControl: UIView {
     }
     
     func updateButtonSelectionStates(){
-        print("==========\(rating)")
         for(index, button) in ratingButtons.enumerate() {
             button.selected = index < rating
         }

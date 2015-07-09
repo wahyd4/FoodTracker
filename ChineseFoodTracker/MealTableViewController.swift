@@ -60,7 +60,6 @@ class MealTableViewController: UITableViewController {
         
         cell.mealLabel.text = meal.name
         cell.photoImageView.image = meal.photo
-        print("----------->\(meal.rating)")
         cell.ratingControl.rating = meal.rating
         return cell
     }

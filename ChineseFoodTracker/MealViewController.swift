@@ -25,6 +25,9 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.delegate = self
+        
+        //disable save button is user doesn't type any words
+        checkValidMealName()
     }
     
     //MARK: UITextFieldDelegate
@@ -33,8 +36,18 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         return true
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        saveButton.enabled = false
+    }
+    
+    func checkValidMealName(){
+        let text = textField.text ?? ""
+        saveButton.enabled = !text.isEmpty
+    }
+    
     func textFieldDidEndEditing(textField: UITextField) {
-       
+       checkValidMealName()
+       navigationItem.title = textField.text
     }
     
     //MARK: UIImagePickerDelegate
